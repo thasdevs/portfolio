@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สมัครชมรมเว็บ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>registration</h1>
+  </header>
+
+  <nav>
+      <a href="/index.html">return</a>
+    <a href="index.html">โปรไฟล์</a>
+    <a href="register.html">สมัครชมรม</a>
+  </nav>
+
+  <main>
+ <h1>สมัครชมรมเว็บ</h1>
+<form method="get">
+  <p>
+    <label for="fullname">ชื่อ-นามสกุล</label>
+    <input type="text" id="fullname"
+     name="fullname" required>
+  </p>
+  <p>
+    <label for="email">อีเมล</label>
+    <input type="email" id="email"
+     name="email" required>
+  </p>
+  <p>
+    <label for="password">รหัสผ่าน</label>
+    <input type="password" id="password"
+     name="password" required>
+  </p>
+  <p>
+    <label for="birthday">วันเกิด</label>
+    <input type="date" id="birthday"
+     name="birthday" required>
+  </p>
+
+  <form method="get">
+  <p>
+    <label for="nickname">ชื่อเล่น</label>
+    <input type="text" id="nickname" 
+    name="nickname" required>
+  </p>
+
+  <p>ชั้นเรียน:
+    <input type="radio" id="m4" name="grade" value="m4" required>
+    <label for="m4">ม.4</label>
+    <input type="radio" id="m5" name="grade" value="m5">
+    <label for="m5">ม.5</label>
+    <input type="radio" id="m6" name="grade" value="m6">
+    <label for="m6">ม.6</label>
+  </p>
+
+  <p>สนใจเรื่อง:
+    <input type="checkbox" id="design" 
+    name="interest" value="design">
+    <label for="design">ออกแบบหน้าเว็บ</label>
+    <input type="checkbox" id="code" 
+    name="interest" value="code">
+    <label for="code">เขียนโค้ด</label>
+  </p>
+
+  <p>
+    <label for="time">ว่างช่วงไหน</label>
+    <select id="time" name="time">
+      <option value="mon">จันทร์ หลังเลิกเรียน</option>
+      <option value="wed">พุธ หลังเลิกเรียน</option>
+      <option value="sat">เสาร์ ช่วงเช้า</option>
+    </select>
+  </p>
+
+  <p>
+    <label for="reason">ทำไมอยากเข้าชมรม</label><br>
+    <textarea id="reason" name="reason" rows="4" cols="40"></textarea>
+  </p>
+
+  <button type="submit">สมัคร</button>
+</form>
+  </main>
+
+  <footer>
+    <p>contact: thas.ping@dome.tu.ac.th</p>
+  </footer>
+</body>
+</html>
